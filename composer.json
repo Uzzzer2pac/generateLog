@@ -1,0 +1,24 @@
+{
+    "name": "uzzzer2pac/generatelog",
+    "description": "generate custom log laravel",
+    "authors": [
+        {
+            "name": "Artem Stepchenko"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Uzzzer2pac\\GenerateLog\\" : "src/"
+        }
+    },
+    "require": {
+       
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uzzzer2pac\\GenerateLog\\GLogServiceProvider"
+            ]
+        }
+    }
+}
