@@ -18,7 +18,7 @@ class GLogFactory
     {
         $log_type = config("GLog.log_type_active.{$type}");
 
-        if ($log_type) {
+        if ($log_type || $this->state_active === 'db') {
             $strategy = $this->getStrategy();
             $strategy->make($type, $message, $data, $exception, $request, $response);
         }

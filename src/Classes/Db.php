@@ -9,6 +9,7 @@ class Db implements GLogInterface
 {
     function make($type, $message, $data, $exception, $request, $response)
     {
+
         $backtrace = debug_backtrace();
         Logging::create([
             'type' => $type,
