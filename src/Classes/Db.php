@@ -14,7 +14,7 @@ class Db implements GLogInterface
         Logging::create([
             'type' => $type,
             'url' => url()->current(),
-            'ip' => $_SERVER['REMOTE_ADDR'],
+            'ip' => $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1',
             'file_parent' => $backtrace[3]['class'],
             'file' => $backtrace[2]['class'],
             'line' => $backtrace[1]['line'],
