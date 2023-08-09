@@ -14,7 +14,19 @@ class Logging extends Model
      * @var array
      */
     protected $fillable = [
-        'type', 'url' ,'ip', 'file_parent','file', 'line','function', 'username','fullname', 'msg','data', 'request_body', 'response' ,'exception'
+        'type',
+        'url' ,
+        'ip',
+        'file_parent',
+        'file',
+        'line',
+        'function',
+        'username',
+        'msg',
+        'data',
+        'request_body',
+        'response' ,
+        'exception',
     ];
 
     protected $casts = [
@@ -31,6 +43,6 @@ class Logging extends Model
      * @var array
      */
     protected $hidden = [
-        
+
     ];
 }

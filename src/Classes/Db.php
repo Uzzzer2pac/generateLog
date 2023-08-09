@@ -20,7 +20,6 @@ class Db implements GLogInterface
             'line' => $backtrace[1]['line'],
             'function' => $backtrace[2]['function'],
             'username' => FacadesSession::get('username'),
-            'fullname' => FacadesSession::get('username'),
             'msg' => $message,
             'data' => $data,
             'request_body' => $request,
