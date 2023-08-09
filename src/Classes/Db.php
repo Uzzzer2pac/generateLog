@@ -1,9 +1,10 @@
 <?php
 
 namespace Uzzzer2pac\GenerateLog\Classes;
+
 use Illuminate\Support\Facades\Session as FacadesSession;
-use App\Models\Logging;
 use Uzzzer2pac\GenerateLog\GLogInterface;
+use Uzzzer2pac\GenerateLog\Logging;
 
 class Db implements GLogInterface
 {
