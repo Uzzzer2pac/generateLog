@@ -33,7 +33,7 @@ class Logging extends Model
         'data' => 'array',
         'request_body' => 'array',
         'response' => 'array',
-        'exception' => 'array'
+        'exception' => 'json'
     ];
 
 
